@@ -1,0 +1,11 @@
+
+mvn clean package -am -pl agent
+
+-javaagent:/Users/akwei/IdeaProjects/agent-demo/agent/target/agent-1.0-SNAPSHOT-jar-with-dependencies.jar -Dnet.bytebuddy.dump=/Users/akwei/IdeaProjects/agent-demo/dumps
+
+
+
+mvn clean package -am -pl agent2-build
+-javaagent:/Users/akwei/IdeaProjects/agent-demo/agent2-build/target/agent2-all.jar -Dnet.bytebuddy.dump=/Users/akwei/IdeaProjects/agent-demo/dumps
+
+
